@@ -1,0 +1,11 @@
+CANDIDATE_IMAGES_DIR=/var/www/images/
+IMAGE_URI_ADR_BASE=http://147.182.139.206:8000/ersys.candidate.image.uri/
+API_KEY=943dffab-b019-4ea2-b976-2f690b262a8c
+HOST=ers-django-db-do-user-10738352-0.b.db.ondigitalocean.com
+USER=doadmin
+PASSWD=96QXkjYkynjGY3t0
+PORT=25060
+BD=demodb
+SMTP_ADDR=mail.privateemail.com
+MAIL_SENDER=app-support@ersys-ci.net
+MAIL_PWD=@bidjan2023
