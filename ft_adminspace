@@ -1,0 +1,22 @@
+upstream adminspace.ersys-ci.net {
+	server 0.0.0.0:3000 fail_timeout=0;
+
+}
+
+server {
+        
+		listen 80;
+		listen [::]:80;
+        server_name adminspace.ersys-ci.net;
+		root /var/www/ersys-demo-svr/ft_adminspace/dist/ersys-back-office;
+        index index.html;
+
+        location /  {
+           proxy_pass http://localhost:3000; 
+        }
+
+        location /assets {
+           alias /var/www/ersys-demo-svr/ft_adminspace/dist/ersys-back-office/assets;
+        }
+}
+
